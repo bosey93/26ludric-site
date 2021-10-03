@@ -53,15 +53,27 @@ align-items: flex-end;
     flex-direction: column;
 }
 .photo img{
-     border-radius: 50%;
-    box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
+    border-radius: 50%;
+ box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
     margin: 20px 0;
     width: 24%;
+        transition: all .4s ease;
+}
+
+.photo img:hover {
+       transform: scale(1.06)
 }
 
 .title h3{
     color: #faf5f2;
+     transition: all .4s ease;
 }
+
+
+.title h3:hover {
+       transform: scale(1.06)
+}
+
 
 .description{
     letter-spacing: 1px;
@@ -69,7 +81,14 @@ align-items: flex-end;
 display: flex;
 justify-content: center;
     color: #faf5f2;
+        transition: all .4s ease;
 }
+
+.description:hover {
+  transform: scale(1.06)
+}
+
+
 
 .title{
         display: flex;
