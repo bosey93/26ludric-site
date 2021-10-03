@@ -53,9 +53,10 @@ align-items: flex-end;
     flex-direction: column;
 }
 .photo img{
-    border-radius: 50%;
- box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
+     border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
     margin: 20px 0;
+    width: 23%;
 }
 
 .title h3{
