@@ -7,19 +7,71 @@
 <link rel="icon" href="ludric.jpg">
 <title>26Ludric</title>
 
-<body>
+<body id="body" class="dark-mode">
+
+  <style>
+  body.light-mode h2{
+color: black;
+  }
+    body.light-mode .container .card .p{
+color: black;
+  }
+      body.dark-mode .card .p{
+color: #bebfc1;;
+  }
+      body.dark-mode {
+   background: #282c34;
+    color: #bebfc1;
+}
+ body.dark-mode a {
+     color: #181d54;
+}
+ body.dark-mode button {
+     background-color: #1b95e0;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     color: #111;
+     border: none;
+margin: 20px;
+}
+ body.light-mode {
+     background-color: #eee;
+    color: #bebfc1;;
+}
+ body.light-mode p {
+     color: #282c34;
+}
+ body.light-mode button {
+     background-color: #1b95e0;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     color: #111;
+     border: none;
+margin: 20px;
+}
+ 
+  </style>
+  <script>function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}</script>
 <section class="hero" id="hero">
 
 <div class="top_left">
 </div>
 <div class="container">
 <div class="text_box">
+
 <h1>26Ludric</h1>
 <h2>Influenceur sur les <br>réseaux sociaux</h2>
 <p>26Ludric es un influenceur TikTok, Instagram, YouTube. Nous parlons de sport, musculation, argent, travail...</p>
 
-<a href="/ldc" class="btn">Nous rejoindre</a>
+<a href="/ldc" class="btn">Nous rejoindre</a>		  <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
 </div>
+
 <img src="ludric.jpg" alt="" style="margin: 80px;width: 300px;height: 300px;border-radius: 12px; box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;">
 
 </div>
@@ -28,15 +80,15 @@
 <div class="container">
 <div class="card">
 <img src="discord.png" alt="" style="height: 65px; margin: 2px;"><br>
-<p style="margin: 11px -23Px;color: #bebfc1;" >Le serveur Discord contient plus de 1800 membres.</p>
+<p style="margin: 11px -23Px;" >Le serveur Discord contient plus de 1800 membres.</p>
 </div>
 <div class="card">
 <img src="ytb.png" alt="" style="height: 85px; width:85px; margin: 2px;"><br>
-<p style="margin: 11px -23Px;color: #bebfc1;" >La chaine YouTube contient plus de 1000 abonnés.</p>
+<p style="margin: 11px -23Px;" >La chaine YouTube contient plus de 1000 abonnés.</p>
 </div>
 <div class="card">
 <img src="tiktok.png" alt="" style="height: 85px; width:145px; margin: 2px;"><br>
-<p style="margin: 11px -23Px;color: #bebfc1;" >Le compte TikTok contient plus de 130.000 abonnés.</p>
+<p style="margin: 11px -23Px;" >Le compte TikTok contient plus de 130.000 abonnés.</p>
 </div>
 
 </div>

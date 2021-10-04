@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +8,64 @@
 	<link rel="stylesheet" href="ldc.css">
 	<link rel="icon" href="ludric.png">
 </head>
-<body>
-
+<body id="body" class="dark-mode">
+  <style>
+  body.light-mode h3{
+color: #181d54;
+  }
+    body.light-mode .container .card .p{
+color: black;
+  }
+      body.dark-mode .card .p{
+color: #bebfc1;
+  }
+      body.dark-mode {
+   background: #282c34;
+    color: #bebfc1;
+}
+ body.dark-mode a {
+     color: #181d54;
+}
+ body.dark-mode button {
+     background-color: #1b95e0;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     color: #111;
+     border: none;
+margin: 20px;
+}
+ body.light-mode {
+     background-color: #eee;
+    color: #bebfc1;;
+}
+ body.light-mode p {
+     color: #282c34;
+}
+ body.light-mode button {
+     background-color: #1b95e0;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     color: #111;
+     border: none;
+margin: 20px;
+}
+ 
+ body.light-mode .bouton{
+display: flex;
+justify-content: center;
+ }
+  body.dark-mode .bouton{
+display: flex;
+justify-content: center;
+ }
+  </style>
+  <script>function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}</script>
 	<div class="contenair">
 			<div class="photo">
 			<img src="ludric.jpg" alt="">
@@ -21,8 +77,12 @@
 		<div class="description">
 			<p>Développement Personnel 💪🏾 #26mentality</p>
 		</div>
+				<div class="bouton">
+					<button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+				</div>
 <div class="contente">
 <a href="https://www.youtube.com/channel/UCTacxzIaQ1h9X2DLj8Bs_qw">			<div class="box">
+	
 			<img src="ytb.png" alt="" style="height: 50px">
 			<p>YouTube</p>
 		</div></a>
@@ -46,52 +106,3 @@
 </div>
 	</div>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nous Rejoindre</title>
-	<link rel="stylesheet" href="ldc.css">
-</head>
-<body>
-
-	<div class="contenair">
-			<div class="photo">
-			<img src="ludricc.jpg" alt="">
-
-		</div>
-		<div class="title">
-			<h3>Ludric</h3>
-		</div>
-		<div class="description">
-			<p>Développement Personnel 💪🏾 #26mentality</p>
-		</div>
-<div class="contente">
-<a href="https://www.youtube.com/channel/UCTacxzIaQ1h9X2DLj8Bs_qw">			<div class="box">
-			<img src="ytb.png" alt="" style="height: 50px">
-			<p>YouTube</p>
-		</div></a>
-		<a href="https://discord.com/invite/M6WN8dKPjx"><div class="box">
-			<img src="discord.png" alt="" style="height: 40px">
-			<p>Discord</p>
-		</div></a>
-			<a href="https://www.tiktok.com/@26ludricmentality?_d=secCgYIASAHKAESPgo8aWN21DQk%2FFryA4Tn4vLb03%2B9cCdCltOD2v05vObbGDbChIiiwh8uma69RigDsP6zKh2OmjJsgHi%2BrpWHGgA%3D&checksum=77cfc5fe6a305c7f40a1433102f43aeb096b2919212ad9584bdd36a496efe610&language=fr&sec_uid=MS4wLjABAAAANKYtgRj17WDLCYd7t8uYM-Y1XoduEnrioyjPqA482jndOGyR3rowGBhZ6OD6Idet&sec_user_id=MS4wLjABAAAANKYtgRj17WDLCYd7t8uYM-Y1XoduEnrioyjPqA482jndOGyR3rowGBhZ6OD6Idet&share_app_id=1233&share_author_id=6929834402017100806&share_link_id=AADCF588-44A1-4229-B222-02ECF7570219&tt_from=copy&u_code=dh51452lhg1m7d&user_id=6929834402017100806&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1"><div class="box">
-			<img src="tiktok.png" alt="" style="height: 40px">
-			<p>TikTok</p>
-		</div></a>
-		<a href="https://www.instagram.com/26ludric/"><div class="box">
-			<img src="instagram.png" alt="" style="height: 40px">
-			<p>Instagram</p>
-		</div></a>
-		
-		<a href="https://docs.google.com/document/d/1-9jy6ETGYWz0OzJbgUp5UWVbl7pDUGKghdzZQQwm29I/edit"><div class="box">
-			<img src="mus.png" alt="" style="height: 53px">
-			<p>Programme Perte de Poids 💪🏾</p>
-		</div></a>
-</div>
-	</div>
-</body>
->>>>>>> 679da770f1077a94b1caa70902896ad891d20ca6
-</html>
