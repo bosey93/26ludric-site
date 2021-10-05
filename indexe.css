@@ -84,8 +84,11 @@ body {
     transform: scale(1.06)
 }
 
-.hero img {
-    width: 600px
+
+.hero .imge img {
+    width: 400px;
+    margin: 50px;
+    border-radius: 50px;
 }
 
 .hero .links .link {
@@ -246,3 +249,8 @@ body {
     }
 }
 
+.photoo{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
