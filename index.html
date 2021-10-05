@@ -34,7 +34,13 @@ color: #bebfc1;;
      color: #111;
      border: none;
 margin: 20px;
+transition: all .4s ease;
 }
+ body.dark-mode button:hover {
+   /* style */
+   transform: scale(1.1);
+ }
+
  body.light-mode {
      background-color: #eee;
     color: #bebfc1;;
@@ -50,6 +56,11 @@ margin: 20px;
      color: #111;
      border: none;
 margin: 20px;
+transition: all .4s ease;
+}
+
+body.light-mode button:hover{
+  transform: scale(1.1);
 }
  
   </style>
@@ -66,14 +77,13 @@ margin: 20px;
 <div class="container">
 <div class="text_box">
 <h1>26Ludric</h1>
-<h2>Influenceur sur les <br>réseaux sociaux</h2>
-<p>26Ludric es un influenceur TikTok, Instagram, YouTube. Nous parlons de sport, musculation, argent, travail...
-</p>
+<h2>Influenceur sur les réseaux sociaux</h2>
+<p>26Ludric es un influenceur TikTok, Instagram, YouTube. Nous parlons de sport, musculation, argent, travail...</p>
 <a href="/ldc" class="btn">Nous rejoindre</a>
         <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
 </div>
 <div class="imge">
-  <img src="ludric.jpg" alt="" style="width: 400px;
+  <img src="ludric.jpg" alt="" style="width: 300px;
     margin: 50px;
     border-radius: 50px;">
 </div>
